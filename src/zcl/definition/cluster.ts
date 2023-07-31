@@ -5584,6 +5584,28 @@ const Cluster: {
         },
         commandsResponse: {},
     },
+    cedar: {
+        ID: 0xFC09,
+        attributes: {
+            data: {ID: 0xDD, type: DataType.charStr},
+        },
+        commands: {
+            notify_all: {
+                ID: 0x01,
+                parameters: [],
+            },
+            notify_get: {
+                ID: 0x00,
+                parameters: [],
+            },
+            cmd: {
+                ID: 0x2,
+                parameters: [{name: 'payload', type: DataType.charStr}]
+            }
+        },
+        commandsResponse: {
+        },
+    },
 };
 
 export default Cluster;
