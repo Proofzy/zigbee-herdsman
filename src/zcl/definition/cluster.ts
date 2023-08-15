@@ -5597,7 +5597,7 @@ const Cluster: {
             unsubscribe: {ID: 0x07, type: DataType.uint32},
             register_set: {ID: 0x08, type: DataType.uint32},
             register_set_32: {ID: 0x09, type: DataType.uint32},
-            register_set_data: {ID: 0x0a, type: DataType.uint32},
+            register_set_data: {ID: 0x0a, type: DataType.uint32}
         },
         commands: {
             notify_all: {
