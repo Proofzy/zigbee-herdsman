@@ -5587,7 +5587,17 @@ const Cluster: {
     cedar: {
         ID: 0xFC09,
         attributes: {
-            data: {ID: 0xDD, type: DataType.charStr},
+            slave_id: {ID: 0x00, type: DataType.uint16 },
+            baudrate: {ID: 0x01, type: DataType.uint32},
+            s_bit: {ID: 0x02, type: DataType.uint8},
+            parity: {ID: 0x03, type: DataType.uint8},
+            e_bit: {ID: 0x04, type: DataType.uint8},
+            force_single: {ID: 0x05, type: DataType.uint8},
+            subscribe: {ID: 0x06, type: DataType.uint32},
+            unsubscribe: {ID: 0x07, type: DataType.uint32},
+            register_set: {ID: 0x08, type: DataType.uint32},
+            register_set_32: {ID: 0x09, type: DataType.uint32},
+            register_set_data: {ID: 0x0a, type: DataType.uint32},
         },
         commands: {
             notify_all: {
