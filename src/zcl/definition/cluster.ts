@@ -5607,10 +5607,6 @@ const Cluster: {
             notify_get: {
                 ID: 0x00,
                 parameters: [],
-            },
-            cmd: {
-                ID: 0x2,
-                parameters: [{name: 'payload', type: DataType.charStr}]
             }
         },
         commandsResponse: {
